@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What to Put Above the Fold on a Local Directory Homepage</title><meta name="description" content="What the first screen of a local directory homepage should show on a phone: a clear promise, a search or location picker and a fast path to listings."><link rel="canonical" href="https://sbdmarketing.github.io/1clickdirectorybuilder/articles/directory-homepage-above-the-fold/">
+<meta property="og:type" content="website"><meta property="og:title" content="What to Put Above the Fold on a Local Directory Homepage"><meta property="og:description" content="What the first screen of a local directory homepage should show on a phone: a clear promise, a search or location picker and a fast path to listings."><meta property="og:url" content="https://sbdmarketing.github.io/1clickdirectorybuilder/articles/directory-homepage-above-the-fold/">
+<meta name="robots" content="index,follow"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ea580c'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='900' font-size='26' text-anchor='middle' fill='white'%3E1C%3C/text%3E%3C/svg%3E">
+<style>
+:root{--dark:#111827;--accent:#ea580c;--soft:#fff4ec;--ink:#14161a;--muted:#5b6170;--line:#e4e7ee;--bg:#ffffff}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--accent);text-underline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.narrow{max-width:740px;margin:0 auto;padding:0 20px}
+header.top{background:var(--dark);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;letter-spacing:-.01em}
+.mark{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;font-size:13px;font-weight:900}
+nav.top a{color:#cfd6e6;text-decoration:none;font-size:15px;margin-left:18px}nav.top a:hover{color:#fff}
+.hero{background:linear-gradient(160deg,var(--dark) 0%,var(--dark) 55%,var(--accent) 160%);color:#fff;padding:72px 0 64px}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:700;color:#9fb6ff}
+.hero h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.12;margin:10px 0 16px;letter-spacing:-.02em;max-width:820px}
+.hero p{font-size:1.15rem;color:#dbe3f4;max-width:720px;margin:0 0 12px}
+.hero a{color:#fff;font-weight:700}
+.pill{display:inline-block;margin-top:18px;background:#fff;color:var(--dark)!important;text-decoration:none;padding:12px 20px;border-radius:999px;font-weight:700;font-size:15px}
+section{padding:56px 0}
+section.alt{background:var(--soft)}
+h2.sec{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-.01em;margin:0 0 8px}
+p.lede{color:var(--muted);margin:0 0 28px;max-width:680px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(12,26,51,.10)}
+.card .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+.card h3{font-size:1.15rem;line-height:1.35;margin:0 0 10px}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.card .more{margin-top:auto;padding-top:14px;color:var(--accent);font-weight:700;font-size:15px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.tile{background:#fff;border-radius:14px;padding:20px;border:1px solid var(--line)}
+.tile b{display:block;margin-bottom:6px}
+article{padding:48px 0 24px}
+.crumb{font-size:14px;margin-bottom:18px}.crumb a{text-decoration:none;font-weight:600}
+article h1{font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 12px}
+.byline{color:var(--muted);font-size:14.5px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+article h2{font-size:1.5rem;line-height:1.3;margin:2.1em 0 .5em;letter-spacing:-.01em}
+article h3{font-size:1.15rem;margin:1.6em 0 .3em}
+article ul,article ol{padding-left:1.3em}article li{margin:.35em 0}
+.toc{background:var(--soft);border-radius:14px;padding:18px 22px;margin:0 0 28px;font-size:15.5px}
+.toc b{display:block;margin-bottom:6px}.toc ol{margin:0;padding-left:1.2em}
+.related{border-top:1px solid var(--line);margin-top:40px;padding-top:24px}
+.related ul{list-style:none;padding:0}.related li{margin:.5em 0}
+footer{background:var(--dark);color:#aeb8cc;font-size:14.5px;padding:32px 0;margin-top:40px}
+footer a{color:#fff}
+@media(max-width:640px){nav.top a{margin-left:12px;font-size:14px}.hero{padding:52px 0 44px}section{padding:40px 0}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "What to Put Above the Fold on a Local Directory Homepage", "description": "What the first screen of a local directory homepage should show on a phone: a clear promise, a search or location picker and a fast path to listings.", "datePublished": "2026-11-22", "mainEntityOfPage": "https://sbdmarketing.github.io/1clickdirectorybuilder/articles/directory-homepage-above-the-fold/", "author": {"@type": "Organization", "name": "1 Click Directory Builder"}, "publisher": {"@type": "Organization", "name": "1 Click Directory Builder"}}</script></head>
+<body><header class="top"><div class="wrap"><a class="brand" href="../../"><span class="mark">1C</span>Directory Design and Copy Notes</a><nav class="top"><a href="../../#articles">Articles</a><a href="../../#about">About</a></nav></div></header>
+<article><div class="narrow"><div class="crumb"><a href="../../">← Directory Design and Copy Notes</a></div><h1>What to Put Above the Fold on a Local Directory Homepage</h1>
+<div class="byline">1 Click Directory Builder · November 22, 2026 · 4 min read</div><nav class="toc"><b>In this article</b><ol><li><a href="#say-what-the-directory-covers-in-one-line">Say what the directory covers in one line</a></li><li><a href="#put-search-or-a-location-picker-within-reach">Put search or a location picker within reach</a></li><li><a href="#show-that-the-listings-are-real">Show that the listings are real</a></li><li><a href="#leave-the-extras-for-further-down">Leave the extras for further down</a></li><li><a href="#write-the-small-words-carefully">Write the small words carefully</a></li><li><a href="#check-it-on-a-phone">Check it on a phone</a></li><li><a href="#questions-about-directory-homepages">Questions about directory homepages</a></li></ol></nav>
+<p>Most visitors to a local directory homepage decide within a few seconds whether to stay. They arrive with one job in mind, such as finding a dentist nearby or a plumber who can come today, and they look at the first screen for a sign that this site can help. If that screen is a large photo, a slogan and a menu, many of them leave before scrolling.</p>
+<p>The first screen on a phone is small, so every element has to earn its place. This note covers what belongs there on a local directory homepage, what can wait further down and how to check the result on a real device.</p>
+<h2 id="say-what-the-directory-covers-in-one-line">Say what the directory covers in one line</h2>
+<p>The headline should tell a visitor exactly what kind of businesses are listed and where. "Daycares and preschools in the South Bay" works. "Your trusted local resource" does not, because it could describe any site.</p>
+<p>Keep it short enough to fit on two lines on a phone. If the niche or area needs explaining, put that in a single sentence under the headline, not in a paragraph.</p>
+<h2 id="put-search-or-a-location-picker-within-reach">Put search or a location picker within reach</h2>
+<p>Visitors to a directory usually know where they are. Give them a way to say so right away: a search box, a list of the main cities, or both. A short row of the five or six largest cities often works better than a search box alone, because people can tap instead of typing on a small keyboard.</p>
+<p>Make sure the tap targets are large enough for a thumb and spaced so people don't hit the wrong city. Test this on an actual phone rather than a narrow desktop window.</p>
+<h2 id="show-that-the-listings-are-real">Show that the listings are real</h2>
+<p>A count helps. A line such as "182 child care providers across 14 cities" tells visitors the directory has depth without any marketing language. If the data was refreshed recently, saying so builds trust too, as long as the date is accurate.</p>
+<p>Avoid ranking words like "best" or "top" unless the page explains how listings are sorted. Plain descriptions of what is included hold up better and draw fewer complaints from businesses.</p>
+<h2 id="leave-the-extras-for-further-down">Leave the extras for further down</h2>
+<p>Several things are useful on a homepage but don't need to be on the first screen:</p>
+<ul><li>An explanation of how the directory works or where the data comes from</li><li>Featured listings or sponsors, clearly labeled</li><li>Guide pages and articles</li><li>A form for businesses that want to be added or corrected</li></ul>
+<p>Placing them lower keeps the first screen focused. Visitors who want more context will scroll for it.</p>
+<h2 id="write-the-small-words-carefully">Write the small words carefully</h2>
+<p>Buttons and labels matter more than their size suggests. "Find a daycare near you" tells someone what will happen when they tap. "Explore" or "Learn more" does not. Category labels should use the words visitors use, which are often simpler than the terms in a Google Maps export.</p>
+<p>The same care applies to the short descriptions on category pages. Our note on <a href="https://telegra.ph/How-to-Write-Category-Descriptions-for-a-Local-Directory-11-22">writing category descriptions for a local directory</a> covers those in more detail.</p>
+<h2 id="check-it-on-a-phone">Check it on a phone</h2>
+<p>Open the homepage on a phone over a mobile connection and look at the first screen without scrolling. Ask yourself whether someone new to the site would know what it covers, where to tap next and whether the listings are worth trusting.</p>
+<p>Then hand the phone to someone else and watch what they tap first. That one test usually shows more than any amount of reasoning about layout. Our guide to <a href="https://1clickdirectorybuilder.design.blog/">laying out pages for local directories</a> covers city and listing pages with the same approach.</p>
+<h2 id="questions-about-directory-homepages">Questions about directory homepages</h2>
+<h3>Should the homepage show listings directly?</h3>
+<p>It can show a few, but most visitors want to pick a city or category first. A short list of cities is usually more useful than random listings.</p>
+<h3>Is a large hero image a good idea?</h3>
+<p>Only if it is small enough to leave room for the headline and the city links on a phone. A large image that pushes everything below the fold costs visitors.</p>
+<h3>How often should the homepage change?</h3>
+<p>Update counts and dates after each data refresh. The layout can stay the same for a long time if it works.</p>
+<p>1 Click Directory Builder turns a Google Maps export from Outscraper, Apify or any scraper into a complete local directory site, with a homepage, county and city pages, search, filters and a map.</p>
+</div></article><footer><div class="wrap">© 2026 1 Click Directory Builder · <a href="../../">Directory Design and Copy Notes</a></div></footer>
+</body></html>
